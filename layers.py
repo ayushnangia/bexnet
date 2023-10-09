@@ -93,7 +93,7 @@ class Linear(Layer):
 
 
 F=Callable([Tensor],Tensor)      
-class Activiation(Layer):
+class Activation(Layer):
     """
     Implements an activation layer to apply a specified activation function 
     to the input tensor.
@@ -130,7 +130,7 @@ def tanh_prime(x:Tensor)-> Tensor:
     y=tanh(x)
     return 1-y**2
 
-class Tanh(Activiation):
+class Tanh(Activation):
     def __init__(self):
         super().__init__(tanh,tanh_prime)
     
@@ -161,6 +161,6 @@ def sigmoid_prime(x: Tensor) -> Tensor:
     s = sigmoid(x)
     return s * (1 - s)
 
-class Sigmoid(Activiation):
+class Sigmoid(Activation):
     def __init__(self) -> None:
         super().__init__(sigmoid, sigmoid_prime)
