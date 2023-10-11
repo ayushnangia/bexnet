@@ -7,7 +7,7 @@ from bexnet.tensor import Tensor
 from bexnet.nn import NeuralNet
 from bexnet.loss import Loss, MSE
 from bexnet.optim import Optimzer, SGD
-from bexnet.data import DataIterator, BatchIterator
+from bexnet.inputdata import DataIterator, BatchIterator
 
 
 def train(net:NeuralNet,
