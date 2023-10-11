@@ -1,2 +1,6 @@
 bext
 /bext/
+bexnet/__pycache__
+bexnet/bexnet.egg-info
+bexnet/build
+bexnet/dist
