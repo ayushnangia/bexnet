@@ -92,7 +92,7 @@ class Linear(Layer):
 
 
 
-F=Callable([Tensor],Tensor)      
+F = Callable[[Tensor], Tensor]
 class Activation(Layer):
     """
     Implements an activation layer to apply a specified activation function 
