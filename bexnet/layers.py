@@ -69,8 +69,8 @@ class Linear(Layer):
         Tensor: The output tensor from the layer.
         """
         self.inputs=inputs
-
         return inputs @ self.params['w']+self.params['b']
+    
     def backward(self, grad: Tensor) -> Tensor:
         """
         Computes the backward pass of the layer using the given gradient.
